@@ -26,10 +26,52 @@ int x = 200;
  }
 	 
  
+ String[] students = new String[3];
+ students[0]= "Mimi";
+ students[1]= "Lenny";	
+ students[2]= "Kelly";
  
+ for (int i=0; i < students.length; i++) {
+	 System.out.println(students[i]);
+ }
+ 
+ /// Enhanced For Loop ----- " : " means "in"
+ 
+ for (String student : students ) {
+	 System.out.println(student);
+ }
+ int[] multiplesOf3 = new int [10];
+ for (int i = 1; i <= multiplesOf3.length; i++) {
+	 multiplesOf3[i-1] = i * 3;
+	 System.out.println("Number: " + multiplesOf3[i-1]);
+ }
+ 
+ int[] multiplesOf5 = new int [10];
+for (int i=0; i < multiplesOf5.length; i++) {
+	 multiplesOf5[i] = (i+1) * 5;
+	 System.out.println(multiplesOf5[i]);
+ }
+ 
+ String firstName = "Testing";
+		 String lastName = "1,2";
+		 String fullName = createFullName(firstName, lastName);
+System.out.println(fullName);
+
+char tryThis = 'h';
+char flyThis = 'h';
+System.out.println(tryThis == flyThis);
+
+		 //// END BRACKETS >>
+ }}
 	
- 
- }}}
+public static String createFullName (String x, String y) {
+	String fullName= x + " " + y;
+	return fullName;
+	/// Can also "return x + " " + y;" 
+}
+
+
+}
 
 	
 	
